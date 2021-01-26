@@ -14,6 +14,7 @@
       <categories>
         <category>LeetCode</category>
         <category>数组</category>
+        <category>简单</category>
       </categories>
       <tags>
         <tag>Java</tag>
@@ -35,11 +36,56 @@
       <categories>
         <category>LeetCode</category>
         <category>数组</category>
+        <category>简单</category>
       </categories>
       <tags>
         <tag>Java</tag>
         <tag>数组</tag>
         <tag>算法s</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>好数对的数目</title>
+    <url>/2021/01/26/Array1512/</url>
+    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><h4 id="1512-好数对的数目"><a href="#1512-好数对的数目" class="headerlink" title="1512. 好数对的数目"></a><a href="https://leetcode-cn.com/problems/number-of-good-pairs/">1512. 好数对的数目</a></h4><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>给你一个整数数组 nums 。</p>
+<p>如果一组数字 (i,j) 满足 nums[i] == nums[j] 且 i &lt; j ，就可以认为这是一组 好数对 。</p>
+<p>返回好数对的数目</p>
+<a id="more"></a>
+
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：nums &#x3D; [1,2,3,1,1,3]</span><br><span class="line">输出：4</span><br><span class="line">解释：有 4 组好数对，分别是 (0,3), (0,4), (3,4), (2,5) ，下标从 0 开始</span><br></pre></td></tr></table></figure>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">暴力循环、双重循环，但注意第二重循环的起点是第一层循环i，避免重复比较</span><br></pre></td></tr></table></figure>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Array1512</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">numIdenticalPairs</span><span class="params">(<span class="keyword">int</span>[] nums)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; nums.length; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[i] ==  nums[j] &amp;&amp; i &lt; j)&#123;</span><br><span class="line">                    res ++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>LeetCode</category>
+        <category>数组</category>
+        <category>简单</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>算法</tag>
+        <tag>数组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>拥有最多糖果的孩子</title>
+    <url>/2021/01/26/Array1431/</url>
+    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><h4 id="1431-拥有最多糖果的孩子"><a href="#1431-拥有最多糖果的孩子" class="headerlink" title="1431. 拥有最多糖果的孩子"></a><a href="https://leetcode-cn.com/problems/kids-with-the-greatest-number-of-candies/">1431. 拥有最多糖果的孩子</a></h4><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>给你一个数组 candies 和一个整数 extraCandies ，其中 candies[i] 代表第 i 个孩子拥有的糖果数目。</p>
+<p>对每一个孩子，检查是否存在一种方案，将额外的 extraCandies 个糖果分配给孩子们之后，此孩子有 最多 的糖果。注意，允许有多个孩子同时拥有 最多 的糖果数目。</p>
+<a id="more"></a>
+
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：candies &#x3D; [2,3,5,1,3], extraCandies &#x3D; 3</span><br><span class="line">输出：[true,true,true,false,true] </span><br><span class="line">解释：</span><br><span class="line">孩子 1 有 2 个糖果，如果他得到所有额外的糖果（3个），那么他总共有 5 个糖果，他将成为拥有最多糖果的孩子。</span><br><span class="line">孩子 2 有 3 个糖果，如果他得到至少 2 个额外糖果，那么他将成为拥有最多糖果的孩子。</span><br><span class="line">孩子 3 有 5 个糖果，他已经是拥有最多糖果的孩子。</span><br><span class="line">孩子 4 有 1 个糖果，即使他得到所有额外的糖果，他也只有 4 个糖果，无法成为拥有糖果最多的孩子。</span><br><span class="line">孩子 5 有 3 个糖果，如果他得到至少 2 个额外糖果，那么他将成为拥有最多糖果的孩子。</span><br></pre></td></tr></table></figure>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、求得candies最大值max (是否可以使用排序算法）</span><br><span class="line">2、循环 每个孩子的糖果数 + extraCandies与max比较，大于等于则为true,否则为false</span><br></pre></td></tr></table></figure>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Array1431</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Boolean&gt; <span class="title">kidsWithCandies</span><span class="params">(<span class="keyword">int</span>[] candies, <span class="keyword">int</span> extraCandies)</span> </span>&#123;</span><br><span class="line">        List&lt;Boolean&gt; res = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="comment">//1、最大值</span></span><br><span class="line">        <span class="keyword">int</span> max = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; candies.length; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (candies[i] &gt; max)&#123;</span><br><span class="line">                max = candies[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; candies.length; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (candies[i] + extraCandies &gt;= max)&#123;</span><br><span class="line">                res.add(<span class="keyword">true</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                res.add(<span class="keyword">false</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Array1431 array1431 = <span class="keyword">new</span> Array1431();</span><br><span class="line">        List&lt;Boolean&gt; res = array1431.kidsWithCandies(<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">1</span>, <span class="number">3</span>&#125;, <span class="number">3</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; res.size(); i++)&#123;</span><br><span class="line">            System.out.print(res.get(i));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>LeetCode</category>
+        <category>数组</category>
+        <category>简单</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>算法</tag>
+        <tag>数组</tag>
       </tags>
   </entry>
 </search>
