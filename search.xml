@@ -29,8 +29,8 @@
 <p>客户的 资产总量 就是他们在各家银行托管的资产数量之和。最富有客户就是 资产总量 最大的客户。</p>
 <a id="more"></a>
 
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：accounts &#x3D; [[1,2,3],[3,2,1]]</span><br><span class="line">输出：6</span><br><span class="line">解释：</span><br><span class="line">第 1 位客户的资产总量 &#x3D; 1 + 2 + 3 &#x3D; 6</span><br><span class="line">第 2 位客户的资产总量 &#x3D; 3 + 2 + 1 &#x3D; 6</span><br><span class="line">两位客户都是最富有的，资产总量都是 6 ，所以返回 6 。</span><br></pre></td></tr></table></figure>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">求得矩阵每行的值，并比较大小。可以先定义max变量，</span><br><span class="line">之后利用双重循环:</span><br><span class="line">(1) 行循环，每位客户</span><br><span class="line">(2) 列循环，计算每位客户的资产总量。</span><br><span class="line">计算的每位客户的资产总量与max比较，记录最大的值，最后输出。</span><br></pre></td></tr></table></figure>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight tap"><table><tr><td class="code"><pre><span class="line">输入：accounts = [[1,2,3],[3,2,1]]</span><br><span class="line">输出：6</span><br><span class="line">解释：</span><br><span class="line">第<span class="number"> 1 </span>位客户的资产总量 =<span class="number"> 1 </span>+<span class="number"> 2 </span>+<span class="number"> 3 </span>= 6</span><br><span class="line">第<span class="number"> 2 </span>位客户的资产总量 =<span class="number"> 3 </span>+<span class="number"> 2 </span>+<span class="number"> 1 </span>= 6</span><br><span class="line">两位客户都是最富有的，资产总量都是<span class="number"> 6 </span>，所以返回<span class="number"> 6 </span>。</span><br></pre></td></tr></table></figure>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><figure class="highlight arduino"><table><tr><td class="code"><pre><span class="line">求得矩阵每行的值，并比较大小。可以先定义<span class="built_in">max</span>变量，</span><br><span class="line">之后利用双重循环:</span><br><span class="line">(<span class="number">1</span>) 行循环，每位客户</span><br><span class="line">(<span class="number">2</span>) 列循环，计算每位客户的资产总量。</span><br><span class="line">计算的每位客户的资产总量与<span class="built_in">max</span>比较，记录最大的值，最后输出。</span><br></pre></td></tr></table></figure>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Array1672</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maximumWealth</span><span class="params">(<span class="keyword">int</span>[][] accounts)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 在Java中，二维数组length是行的个数</span></span><br><span class="line">        <span class="keyword">int</span> length = accounts.length;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length; i++)&#123;</span><br><span class="line">            <span class="keyword">int</span> col = accounts[i].length;</span><br><span class="line">            <span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; col; j++)&#123;</span><br><span class="line">                temp += accounts[i][j];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (temp &gt; res)&#123;</span><br><span class="line">                res = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Array1672 array1672 = <span class="keyword">new</span> Array1672();</span><br><span class="line">        <span class="keyword">int</span>[][] accounts = &#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>&#125;&#125;;</span><br><span class="line">        System.out.println(array1672.maximumWealth(accounts));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
@@ -40,8 +40,8 @@
       </categories>
       <tags>
         <tag>Java</tag>
+        <tag>算法</tag>
         <tag>数组</tag>
-        <tag>算法s</tag>
       </tags>
   </entry>
   <entry>
@@ -86,6 +86,26 @@
         <tag>Java</tag>
         <tag>算法</tag>
         <tag>数组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>二叉树</title>
+    <url>/2021/01/29/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
+    <content><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><h3 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h3><p>二叉树是树的一种特殊形式。二叉树每个节点最多有两个孩子节点（可以为1个或者没有孩子节点）。二叉树的两个孩子节点，左侧被称为左孩子，右侧被称为右孩子。</p>
+<h4 id="满二叉树"><a href="#满二叉树" class="headerlink" title="满二叉树"></a>满二叉树</h4><p>一个二叉树的所有非叶子节点都存在左右孩子，并且所有叶子节点都在同一层级上，那么这个树就是满二叉树。</p>
+<h4 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h4><p>对一个有n个节点的二叉树，按层级顺序编号，则所有节点的编号为从1到n。如果这个树所有节点和同样深度的满二叉树的编号为从1到n的节点位置相同。则这个二叉树为完全二叉树。</p>
+<h3 id="二叉树的遍历"><a href="#二叉树的遍历" class="headerlink" title="二叉树的遍历"></a>二叉树的遍历</h3><p>二叉树的遍历方式分为深度优先遍历和广度优先遍历方式。这两个概念不止局限于二叉树，它们更是一种抽象的算法思想，决定了访问某些复杂数据结构的顺序。在访问树、图或其它一些复杂数据结构时，这两个概念经常被用到。</p>
+<h4 id="深度优先遍历"><a href="#深度优先遍历" class="headerlink" title="深度优先遍历"></a>深度优先遍历</h4><p>深度优先即”一头扎到底“的访问方式。</p>
+<h5 id="前序遍历"><a href="#前序遍历" class="headerlink" title="前序遍历"></a>前序遍历</h5><p>前序遍历输出顺序是根节点、左子树、右子树。</p>
+<h5 id="中序遍历"><a href="#中序遍历" class="headerlink" title="中序遍历"></a>中序遍历</h5><p>中序遍历输出顺序是左子树、根节点、右子树。</p>
+<h5 id="后序遍历"><a href="#后序遍历" class="headerlink" title="后序遍历"></a>后序遍历</h5><h4 id="广度优先遍历"><a href="#广度优先遍历" class="headerlink" title="广度优先遍历"></a>广度优先遍历</h4><h5 id="层序遍历"><a href="#层序遍历" class="headerlink" title="层序遍历"></a>层序遍历</h5>]]></content>
+      <categories>
+        <category>数据结构</category>
+        <category>树</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
 </search>
