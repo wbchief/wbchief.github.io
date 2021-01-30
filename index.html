@@ -192,7 +192,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/29/%E4%BA%8C%E5%8F%89%E6%A0%91/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/posts/3898435914/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/author1.jpg">
@@ -206,7 +206,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/01/29/%E4%BA%8C%E5%8F%89%E6%A0%91/" class="post-title-link" itemprop="url">二叉树</a>
+            <a href="/posts/3898435914/" class="post-title-link" itemprop="url">二叉树</a>
         </h2>
 
         <div class="post-meta">
@@ -215,10 +215,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-01-29 19:48:22 / 修改时间：20:10:53" itemprop="dateCreated datePublished" datetime="2021-01-29T19:48:22+08:00">2021-01-29</time>
+              <time title="创建时间：2021-01-29 19:48:22" itemprop="dateCreated datePublished" datetime="2021-01-29T19:48:22+08:00">2021-01-29</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-01-30 19:55:16" itemprop="dateModified" datetime="2021-01-30T19:55:16+08:00">2021-01-30</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -234,7 +240,7 @@
             </span>
 
           
-            <span id="/2021/01/29/%E4%BA%8C%E5%8F%89%E6%A0%91/" class="post-meta-item leancloud_visitors" data-flag-title="二叉树" title="阅读次数">
+            <span id="/posts/3898435914/" class="post-meta-item leancloud_visitors" data-flag-title="二叉树" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -249,8 +255,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2021/01/29/%E4%BA%8C%E5%8F%89%E6%A0%91/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/01/29/%E4%BA%8C%E5%8F%89%E6%A0%91/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/3898435914/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/3898435914/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -260,7 +266,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>414</span>
+              <span>690</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -286,7 +292,14 @@
 <h4 id="深度优先遍历"><a href="#深度优先遍历" class="headerlink" title="深度优先遍历"></a>深度优先遍历</h4><p>深度优先即”一头扎到底“的访问方式。</p>
 <h5 id="前序遍历"><a href="#前序遍历" class="headerlink" title="前序遍历"></a>前序遍历</h5><p>前序遍历输出顺序是根节点、左子树、右子树。</p>
 <h5 id="中序遍历"><a href="#中序遍历" class="headerlink" title="中序遍历"></a>中序遍历</h5><p>中序遍历输出顺序是左子树、根节点、右子树。</p>
-<h5 id="后序遍历"><a href="#后序遍历" class="headerlink" title="后序遍历"></a>后序遍历</h5><h4 id="广度优先遍历"><a href="#广度优先遍历" class="headerlink" title="广度优先遍历"></a>广度优先遍历</h4><h5 id="层序遍历"><a href="#层序遍历" class="headerlink" title="层序遍历"></a>层序遍历</h5>
+<h5 id="后序遍历"><a href="#后序遍历" class="headerlink" title="后序遍历"></a>后序遍历</h5><p>后序遍历输出顺序是左子树、右子树、根节点。</p>
+<h4 id="广度优先遍历"><a href="#广度优先遍历" class="headerlink" title="广度优先遍历"></a>广度优先遍历</h4><h5 id="层序遍历"><a href="#层序遍历" class="headerlink" title="层序遍历"></a>层序遍历</h5><p>按照从根节点到叶子节点的层次关系，一层一层横向遍历各个节点。（需要借助与队列实现）</p>
+<h3 id="二叉堆"><a href="#二叉堆" class="headerlink" title="二叉堆"></a>二叉堆</h3><p>二叉堆本质上是一种完全二叉树，它分为最大堆和最小堆两种类型。</p>
+<h4 id="最大堆"><a href="#最大堆" class="headerlink" title="最大堆"></a>最大堆</h4><p>最大堆的任何一个父节点的值，都大于或等于它左、右孩子节点的值。</p>
+<h4 id="最小堆"><a href="#最小堆" class="headerlink" title="最小堆"></a>最小堆</h4><p>最小堆的任何一个父节点的值，都小于或等于它左、右孩子节点的值。</p>
+<p>二叉堆的根节点叫作堆顶。最大堆和最小堆的特点决定了：最大堆的堆顶是整个堆中的最大元素；最小堆的堆顶是整个堆中的最小元素。</p>
+<p>二叉树虽然是一个完全二叉树，但它的存储方式并不是链式存储，而是顺序存储。即二叉堆的所有节点都存储在数组中。</p>
+
       
     </div>
 
@@ -305,7 +318,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/26/Array1512/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/posts/1908178651/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/author1.jpg">
@@ -319,7 +332,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/01/26/Array1512/" class="post-title-link" itemprop="url">好数对的数目</a>
+            <a href="/posts/1908178651/" class="post-title-link" itemprop="url">好数对的数目</a>
         </h2>
 
         <div class="post-meta">
@@ -328,10 +341,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-01-26 21:06:17 / 修改时间：21:09:10" itemprop="dateCreated datePublished" datetime="2021-01-26T21:06:17+08:00">2021-01-26</time>
+              <time title="创建时间：2021-01-26 21:06:17" itemprop="dateCreated datePublished" datetime="2021-01-26T21:06:17+08:00">2021-01-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-01-30 19:57:51" itemprop="dateModified" datetime="2021-01-30T19:57:51+08:00">2021-01-30</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -351,7 +370,7 @@
             </span>
 
           
-            <span id="/2021/01/26/Array1512/" class="post-meta-item leancloud_visitors" data-flag-title="好数对的数目" title="阅读次数">
+            <span id="/posts/1908178651/" class="post-meta-item leancloud_visitors" data-flag-title="好数对的数目" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -366,8 +385,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2021/01/26/Array1512/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/01/26/Array1512/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/1908178651/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/1908178651/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -377,7 +396,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>463</span>
+              <span>458</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -401,7 +420,7 @@
 <p>返回好数对的数目</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/01/26/Array1512/#more" rel="contents">
+              <a class="btn" href="/posts/1908178651/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -425,7 +444,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/26/Array1431/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/posts/2571685219/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/author1.jpg">
@@ -439,7 +458,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/01/26/Array1431/" class="post-title-link" itemprop="url">拥有最多糖果的孩子</a>
+            <a href="/posts/2571685219/" class="post-title-link" itemprop="url">拥有最多糖果的孩子</a>
         </h2>
 
         <div class="post-meta">
@@ -448,10 +467,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-01-26 21:01:51 / 修改时间：21:09:37" itemprop="dateCreated datePublished" datetime="2021-01-26T21:01:51+08:00">2021-01-26</time>
+              <time title="创建时间：2021-01-26 21:01:51" itemprop="dateCreated datePublished" datetime="2021-01-26T21:01:51+08:00">2021-01-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-01-30 19:57:51" itemprop="dateModified" datetime="2021-01-30T19:57:51+08:00">2021-01-30</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -471,7 +496,7 @@
             </span>
 
           
-            <span id="/2021/01/26/Array1431/" class="post-meta-item leancloud_visitors" data-flag-title="拥有最多糖果的孩子" title="阅读次数">
+            <span id="/posts/2571685219/" class="post-meta-item leancloud_visitors" data-flag-title="拥有最多糖果的孩子" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -486,8 +511,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2021/01/26/Array1431/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/01/26/Array1431/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/2571685219/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/2571685219/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -520,7 +545,7 @@
 <p>对每一个孩子，检查是否存在一种方案，将额外的 extraCandies 个糖果分配给孩子们之后，此孩子有 最多 的糖果。注意，允许有多个孩子同时拥有 最多 的糖果数目。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/01/26/Array1431/#more" rel="contents">
+              <a class="btn" href="/posts/2571685219/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -544,7 +569,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/25/Array1672/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/posts/2894011118/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/author1.jpg">
@@ -558,7 +583,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/01/25/Array1672/" class="post-title-link" itemprop="url">最富有客户的资产总量</a>
+            <a href="/posts/2894011118/" class="post-title-link" itemprop="url">最富有客户的资产总量</a>
         </h2>
 
         <div class="post-meta">
@@ -575,7 +600,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-29 19:50:11" itemprop="dateModified" datetime="2021-01-29T19:50:11+08:00">2021-01-29</time>
+                <time title="修改时间：2021-01-30 19:57:51" itemprop="dateModified" datetime="2021-01-30T19:57:51+08:00">2021-01-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -596,7 +621,7 @@
             </span>
 
           
-            <span id="/2021/01/25/Array1672/" class="post-meta-item leancloud_visitors" data-flag-title="最富有客户的资产总量" title="阅读次数">
+            <span id="/posts/2894011118/" class="post-meta-item leancloud_visitors" data-flag-title="最富有客户的资产总量" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -611,8 +636,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2021/01/25/Array1672/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/01/25/Array1672/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/2894011118/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/2894011118/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -645,7 +670,7 @@
 <p>客户的 资产总量 就是他们在各家银行托管的资产数量之和。最富有客户就是 资产总量 最大的客户。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/01/25/Array1672/#more" rel="contents">
+              <a class="btn" href="/posts/2894011118/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -669,7 +694,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/25/Array1480/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/posts/3840914265/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/author1.jpg">
@@ -683,7 +708,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/01/25/Array1480/" class="post-title-link" itemprop="url">一维数组的动态和</a>
+            <a href="/posts/3840914265/" class="post-title-link" itemprop="url">一维数组的动态和</a>
         </h2>
 
         <div class="post-meta">
@@ -700,7 +725,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-26 21:08:52" itemprop="dateModified" datetime="2021-01-26T21:08:52+08:00">2021-01-26</time>
+                <time title="修改时间：2021-01-30 19:57:51" itemprop="dateModified" datetime="2021-01-30T19:57:51+08:00">2021-01-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -721,7 +746,7 @@
             </span>
 
           
-            <span id="/2021/01/25/Array1480/" class="post-meta-item leancloud_visitors" data-flag-title="一维数组的动态和" title="阅读次数">
+            <span id="/posts/3840914265/" class="post-meta-item leancloud_visitors" data-flag-title="一维数组的动态和" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -736,8 +761,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2021/01/25/Array1480/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/01/25/Array1480/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/3840914265/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/3840914265/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -747,7 +772,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>435</span>
+              <span>430</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -770,7 +795,7 @@
 <p>请返回 nums 的动态和。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/01/25/Array1480/#more" rel="contents">
+              <a class="btn" href="/posts/3840914265/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -918,7 +943,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">4k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
