@@ -70,6 +70,8 @@
     <title>二叉树</title>
     <url>/posts/3898435914/</url>
     <content><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><h3 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h3><p>二叉树是树的一种特殊形式。二叉树每个节点最多有两个孩子节点（可以为1个或者没有孩子节点）。二叉树的两个孩子节点，左侧被称为左孩子，右侧被称为右孩子。</p>
+<a id="more"></a>
+
 <h4 id="满二叉树"><a href="#满二叉树" class="headerlink" title="满二叉树"></a>满二叉树</h4><p>一个二叉树的所有非叶子节点都存在左右孩子，并且所有叶子节点都在同一层级上，那么这个树就是满二叉树。</p>
 <h4 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h4><p>对一个有n个节点的二叉树，按层级顺序编号，则所有节点的编号为从1到n。如果这个树所有节点和同样深度的满二叉树的编号为从1到n的节点位置相同。则这个二叉树为完全二叉树。</p>
 <h3 id="二叉树的遍历"><a href="#二叉树的遍历" class="headerlink" title="二叉树的遍历"></a>二叉树的遍历</h3><p>二叉树的遍历方式分为深度优先遍历和广度优先遍历方式。这两个概念不止局限于二叉树，它们更是一种抽象的算法思想，决定了访问某些复杂数据结构的顺序。在访问树、图或其它一些复杂数据结构时，这两个概念经常被用到。</p>
@@ -113,6 +115,119 @@
         <tag>Java</tag>
         <tag>算法</tag>
         <tag>数组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>排序算法</title>
+    <url>/posts/1935562632/</url>
+    <content><![CDATA[<h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><p>排序在生活中无处不在，比如在在课堂上上老师按照学号对学生进行排序；在考试后，老师按照考试成绩从高到低进行排序；在购物时，我们将物品按照价钱从高到低或者从低到高进行排序等等。</p>
+<p>根据时间复杂度的不同，主流的排血算法可以分为时间复杂$O(n^2)$的排序算法、时间复杂度为$O(nlogn)$的排序算法以及时间复杂度为线性的排序算法。</p>
+<a id="more"></a>
+
+<p>1、时间复杂度$O(n^2)$:</p>
+<ul>
+<li>冒泡排序</li>
+<li>选择排序</li>
+<li>插入排序</li>
+<li>希尔排序（性能略优于$O(n^2)$，但又比不上$O(nlogn)$。</li>
+</ul>
+<p>2、时间复杂度$O(nlogn)$:</p>
+<ul>
+<li>快速排序</li>
+<li>归并排序</li>
+<li>堆排序</li>
+</ul>
+<p>3、时间复杂度线性</p>
+<ul>
+<li>计数排序</li>
+<li>桶排序</li>
+<li>基数排序</li>
+</ul>
+<p>此外排序算法也可以根据其稳定性划分为稳定排序和不稳定排序。如果值相同的元素在排序后仍然保持着排序前的顺序，则这样的算法是稳定排序；如果值相同的元素在排序后打乱了排序前的顺序，则这样的算法是不稳定排序。</p>
+<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3>]]></content>
+      <categories>
+        <category>算法</category>
+        <category>排序算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>anaconda操作</title>
+    <url>/posts/3424731564/</url>
+    <content><![CDATA[<h1 id="Anaconda基本操作"><a href="#Anaconda基本操作" class="headerlink" title="Anaconda基本操作"></a>Anaconda基本操作</h1><h2 id="虚拟环境"><a href="#虚拟环境" class="headerlink" title="虚拟环境"></a>虚拟环境</h2><h3 id="查看已有的虚拟环境"><a href="#查看已有的虚拟环境" class="headerlink" title="查看已有的虚拟环境"></a>查看已有的虚拟环境</h3><figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">conda <span class="keyword">env</span> list </span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+
+<h3 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">conda create -n tensorflow</span></span><br></pre></td></tr></table></figure>
+<h3 id="删除虚拟环境"><a href="#删除虚拟环境" class="headerlink" title="删除虚拟环境"></a>删除虚拟环境</h3><p>conda remove -n your_env_name –all</p>
+<h3 id="激活虚拟环境"><a href="#激活虚拟环境" class="headerlink" title="激活虚拟环境"></a>激活虚拟环境</h3><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">activate</span> tensorflow</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="退出虚拟环境"><a href="#退出虚拟环境" class="headerlink" title="退出虚拟环境"></a>退出虚拟环境</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">deactivate tensorflow</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="生成requirements-txt文件"><a href="#生成requirements-txt文件" class="headerlink" title="生成requirements.txt文件"></a>生成requirements.txt文件</h3><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">pip <span class="keyword">freeze</span> &gt; requirements.txt</span><br></pre></td></tr></table></figure>
+<h3 id="安装requirements-txt依赖"><a href="#安装requirements-txt依赖" class="headerlink" title="安装requirements.txt依赖"></a>安装requirements.txt依赖</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pip <span class="keyword">install</span> -r requirements.txt</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>Anaconda</category>
+      </categories>
+      <tags>
+        <tag>Anaconda</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>docker</title>
+    <url>/posts/4065722285/</url>
+    <content><![CDATA[<h1 id="Docker安装与使用"><a href="#Docker安装与使用" class="headerlink" title="Docker安装与使用"></a>Docker安装与使用</h1><h2 id="1、Docker安装"><a href="#1、Docker安装" class="headerlink" title="1、Docker安装"></a>1、Docker安装</h2><p>安装时发现Docker只针对Window专业版，对于家庭版则不能直接安装，需要安装Docker Tool。</p>
+<p>国内高速下载地址：<a href="http://get.daocloud.io/#install-docker-for-mac-windows">http://get.daocloud.io/#install-docker-for-mac-windows</a></p>
+<p>安装成功后，双击打开Docker Quicks Terminal。刚打开Docker Quickstart Terminal的时候，可能会弹出找不到快捷方式的提示框，点击浏览，找到bash.exe程序双击运行即可</p>
+<a id="more"></a>
+
+<h2 id="2、Docker使用"><a href="#2、Docker使用" class="headerlink" title="2、Docker使用"></a>2、Docker使用</h2><p>docker-machine create –engine-registry-mirror=<a href="https://t3sceck9.mirror.aliyuncs.com/">https://t3sceck9.mirror.aliyuncs.com</a> -d virtualbox –virtualbox-no-vtx-check default</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#开发模式:</span></span><br><span class="line">docker<span class="literal">-compose</span> <span class="operator">-f</span> docker<span class="literal">-compose</span>.yml <span class="operator">-f</span> docker<span class="literal">-compose</span>.dev.yml build</span><br><span class="line">docker<span class="literal">-compose</span> <span class="operator">-f</span> docker<span class="literal">-compose</span>.yml <span class="operator">-f</span> docker<span class="literal">-compose</span>.dev.yml up</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看所有容器:</span></span><br><span class="line">docker <span class="built_in">ps</span> <span class="literal">-a</span> </span><br><span class="line"><span class="comment">#查看所有镜像:</span></span><br><span class="line">docker images</span><br><span class="line"><span class="comment">#删除所有的容器:</span></span><br><span class="line">docker <span class="built_in">rm</span> <span class="variable">$</span>(docker <span class="built_in">ps</span> <span class="literal">-aq</span>) </span><br><span class="line"></span><br><span class="line"><span class="comment">#删除容器应用: </span></span><br><span class="line">docker <span class="built_in">ps</span> <span class="literal">-a</span> -<span class="literal">-format</span> <span class="string">&quot;&#123;&#123;.ID&#125;&#125;&quot;</span> | <span class="keyword">foreach</span> &#123;</span><br><span class="line">    docker stop <span class="variable">$_</span></span><br><span class="line">    docker <span class="built_in">rm</span> <span class="variable">$_</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除本地容器镜像:</span></span><br><span class="line">docker images -<span class="literal">-format</span> <span class="string">&quot;&#123;&#123;.ID&#125;&#125;&quot;</span> | <span class="keyword">foreach</span> &#123;</span><br><span class="line">   docker rmi stop <span class="variable">$_</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>winpty docker login</p>
+<p>winpty docker login –username=wchiefb registry.cn-shenzhen.aliyuncs.com</p>
+<p><a href="https://www.icode9.com/content-3-865535.html">https://www.icode9.com/content-3-865535.html</a></p>
+<p> docker build -t registry.cn-shenzhen.aliyuncs.com/baiph-test/test_tianchi:1.0 .</p>
+<p>docker push registry.cn-shenzhen.aliyuncs.com/baiph-test/test_tianchi:1.0</p>
+<p> pipreqs . –encoding=utf8 –force </p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数组中重复的数字</title>
+    <url>/posts/2401653879/</url>
+    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p><a href="https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/">剑指offer03：数组中重复的数字</a></p>
+<p>找出数组中重复的数字。</p>
+<p>在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。</p>
+<a id="more"></a>
+
+<p>示例1</p>
+<figure class="highlight accesslog"><table><tr><td class="code"><pre><span class="line">输入：</span><br><span class="line"><span class="string">[2, 3, 1, 0, 2, 5, 3]</span></span><br><span class="line">输出：<span class="number">2</span> 或 <span class="number">3</span> </span><br></pre></td></tr></table></figure>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h4 id="方案1"><a href="#方案1" class="headerlink" title="方案1"></a>方案1</h4><p>建立一个n维数组，nums中的数字作为n维数组索引。循环nums，若nums[i]不等于0,则表明数字i出现过，返回此数字。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Offer03</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 思路1</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findRepeatNumber</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] temp = <span class="keyword">new</span> <span class="keyword">int</span>[nums.length];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i &lt; nums.length; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (temp[nums[i]] == <span class="number">0</span>)&#123;</span><br><span class="line">                temp[nums[i]] = temp[nums[i]] + <span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> nums[i];</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span>  <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] nums = &#123;<span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">3</span>&#125;;</span><br><span class="line">        System.out.println(<span class="keyword">new</span> Offer03().findRepeatNumber(nums));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="方案2"><a href="#方案2" class="headerlink" title="方案2"></a>方案2</h4><p>利用Java中的Map数据结构，若key值不存在则是第一次出现，否则返回此数字。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Offer03</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 思路1</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findRepeatNumber1</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] temp = <span class="keyword">new</span> <span class="keyword">int</span>[nums.length];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i &lt; nums.length; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (temp[nums[i]] == <span class="number">0</span>)&#123;</span><br><span class="line">                temp[nums[i]] = temp[nums[i]] + <span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> nums[i];</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 思路2</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findRepeatNumber2</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res = -<span class="number">1</span>;</span><br><span class="line">        <span class="comment">// Map类型不能是基本基础类型</span></span><br><span class="line">        Map&lt;Integer, Integer&gt; dict= <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i &lt; nums.length; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(dict.containsKey(nums[i]))&#123;</span><br><span class="line">                <span class="keyword">return</span> nums[i];</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                dict.put(nums[i], <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span>  <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] nums = &#123;<span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">3</span>&#125;;</span><br><span class="line">        System.out.println(<span class="keyword">new</span> Offer03().findRepeatNumber1(nums));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Note："><a href="#Note：" class="headerlink" title="Note："></a>Note：</h2><p>（1）int与Integer的区别</p>
+<p>1、Integer是int的包装类，int是Java的一种基本数据类型。</p>
+<p>2、Integer变量必须实例化后才能使用，而int变量可以直接使用。</p>
+<p>3、Integer实际是对象的引用，当new一个Integer时，实际上是生成一个指针指向此对象；而int则是直接存储数据值。（Interger实际上是对一个Integer对象的引用，所以new生成的两个Integer变量是不相等的，因为内存地址是不相同的）</p>
+<p>4、Integer默认值是null，int的默认值是0.</p>
+]]></content>
+      <categories>
+        <category>LeetCode</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>算法</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
 </search>
